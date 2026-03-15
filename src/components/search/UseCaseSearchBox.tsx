@@ -2,11 +2,10 @@
 
 import { useState } from "react";
 import { Search, Loader2 } from "lucide-react";
-import { ToolRecommendation } from "@/lib/perplexity";
+import { ToolRecommendation } from "@/lib/openrouter";
 
 interface SearchResults {
   recommendations: ToolRecommendation[];
-  citations: string[];
 }
 
 export function UseCaseSearchBox({ onResults }: { onResults: (results: SearchResults | null) => void }) {
